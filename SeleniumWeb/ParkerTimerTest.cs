@@ -45,7 +45,7 @@ namespace SeleniumWeb
             Assert.AreEqual("https://bairdonline.rwbaird.com/Web/user/dashboard/ucd/1", driver.Url);
             //Wait 15 minutes before logging out
             Console.WriteLine("Waiting 15 minutes...");
-            Thread.Sleep(810);
+            Thread.Sleep(813); //defaul 813s
 
             //User logout
             driver.FindElement(By.Id("baird-timeout-warning")).Click();
